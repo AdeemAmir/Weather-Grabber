@@ -24,7 +24,7 @@ function gotoHome() {
 import { xpCol } from './CommonJS/manage.mjs';
 
 let apiW = { key: '', base: "https://api.openweathermap.org/data/2.5/" };
-xpCol().then(x => {apiW.key = x;if (apiW.key) {getResults('Karachi');}});
+xpCol(1).then(x => {apiW.key = x;if (apiW.key) {getResults('Karachi');}});
 
 const searchbox = document.querySelector('.search-box');
 
